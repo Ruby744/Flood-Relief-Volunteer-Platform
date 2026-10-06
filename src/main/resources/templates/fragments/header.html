@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>M.F.F.</title>
+    <style>
+
+    .navbar{
+    	background-color: rgb(231, 249, 254);
+        padding: 5px;
+    }
+    
+	.navbar-brand{	
+		font-size: 45px;
+		font-family: Arial, sans-serif;
+		letter-spacing: 5px;
+		font-weight: bold;
+		font-style: italic;
+	}
+	
+	.nav-item{
+		font-size: 18px;
+		font-family: 'Arial';
+	}
+	
+	.active {
+		font-weight: bold;
+	}
+    </style>
+	<script src="/js/change_active.js" defer></script>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-xl">
+	  <div class="container">
+	    <a class="navbar-brand mx-5" th:href="@{/home}">M.F.F.</a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    
+	    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">  
+	      
+	      <ul class="navbar-nav ms-auto align-items-center">
+	        <li class="nav-item mx-5">
+	          <a class="nav-link active" href="/home">Home</a>
+	        </li>
+	        <li class="nav-item mx-5">
+	          <a class="nav-link" href="/volunteer">Volunteer</a>
+	        </li>
+	        <li class="nav-item mx-5">
+	          <a class="nav-link" href="/donations/form">Donation</a>
+	        </li>
+			<li class="nav-item mx-5">
+			  <a class="nav-link" href="/contact">Contact Us</a>
+			</li>
+			<li class="nav-item mx-5">
+	          <a class="nav-link" href="/admin">Admin</a>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+</body>

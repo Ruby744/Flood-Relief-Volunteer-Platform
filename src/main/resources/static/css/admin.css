@@ -1,0 +1,123 @@
+.login-container{
+	width: 360px;
+	height: flex;
+	padding-bottom: 20px;
+	margin: auto;
+	margin-top: 40px;
+	margin-bottom: 195px;
+	border-radius: 10px;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.error-msg{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+h2{
+	text-align: center;
+	padding-top: 15px;
+}
+
+.login-container form{
+	width: 300px;
+	margin-left: 20px;
+}
+
+.login-container form label{
+	display: flex;
+	margin-top: 20px;
+	font-size: 18px;
+}
+
+.login-container form input{
+	width: 100%;
+	padding: 7px;
+	border: 1px solid gray;
+	border-radius: 6px;
+}
+
+.login-container form .btn{
+	margin-top: 20px;
+}
+
+.dashboard{
+	margin: auto;
+	margin-top: 40px;
+	border-radius: 10px;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.manage{
+	border-radius: 10px;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.manage:hover{
+	background-color: #f0f0f0;
+	transform: scale(1.1);
+}
+
+.manage a{
+	display: block; 
+	text-decoration: none; 
+	color: inherit;
+}
+
+.dashboard form .btn{
+	margin-bottom: 20px;
+}
+
+
+
+
+.form-container{
+	width: 360px;
+	margin: auto;
+	margin-top: 40px;
+	margin-bottom: 80px;
+	padding-bottom: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.form-container h4{
+	margin-top:25px;
+	text-decoration: underline;
+}
+
+.form-container h5{
+	margin-top:25px;
+	text-decoration: underline;
+}
+
+.form-container .card-body{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.form-container form label{
+	display: flex;
+	margin-top: 20px;
+	font-size: 18px;
+}
+
+.form-container form input{
+	padding: 7px;
+	border: 1px solid gray;
+	border-radius: 6px;
+}
+
+.form-container form .btn{
+	margin-top: 20px;
+}
+
+.container-list{
+	margin-bottom: 350px;
+}
+
+.donation-section {
+	display: none; /* Hide sections by default */
+}
+
+

@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Flood1</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<link rel="stylesheet" href="/css/activity.css">
+	<script src="/js/Flood.js"></script>
+</head>
+ 
+<body>
+ 
+	<div th:insert="~{fragments/header}"></div>
+	<div class="container">
+		<div class="row mt-4">
+			<!-- Main content column with horizontal margin -->
+			<div class="col-md-8 p-3 ml-4 mt-4"> <!-- Adds margin on both left and right -->
+ 
+				<div id="activities">
+					<h1>Fundraising Events</h1>
+					<h7>Post at: 2:55pm 01 December 2024</h7><br><br>
+				</div>
+ 
+				<div class="container">
+					<div class="row g-3 align-items-stretch">
+						<!-- First Column: GIF -->
+						<div class="col-md-6 d-flex">
+							<img src="img/food1.jpg" alt="Ocean View" class="img-fluid rounded w-100 h-100"
+								style="object-fit: cover;">
+						</div>
+ 
+						<!-- Second Column: Stacked Images -->
+						<div class="col-md-6">
+							<div class="row g-3 h-100">
+								<!-- Top Image -->
+								<div class="col-12">
+									<img src="img/kang.jpg" alt="Ocean View" class="img-fluid rounded"
+										style="object-fit: cover; height: 100%;">
+								</div>
+								<!-- Bottom Image -->
+								<div class="col-12">
+									<img src="img/30.png" alt="Ocean View" class="img-fluid rounded"
+										style="object-fit: cover; height: 100%;">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+ 
+				<div class="container">
+					<h2><br>Fundraising Objectives</h2>
+					<p class="mt-3">
+						The aim of our fundraising campaign is to help those affected by the
+						floods in Malaysia to rebuild their homes and return to normal life.
+						Through donations from the community, we hope to achieve four main objectives:
+						Firstly, to provide building materials and basic amenities to the affected
+						families to help them rebuild their homes as soon as possible. Secondly,
+						to distribute food, water, medicine and other necessities to meet the urgent
+						needs of those affected by the disaster. Thirdly, to support post-disaster
+						education and mental health services to help communities regain confidence,
+						with special attention to the psychological recovery of children and youth.
+						Lastly, we also hope to raise funds for the construction of flood prevention
+						facilities and enhancement of public education on disaster prevention, so as
+						to reduce the impact of flooding on the community in the long run.
+					</p>
+				</div>
+ 
+				<div class="container">
+					<h2>Number and Amount of Donations</h2>
+					<p class="mt-3">
+						In our latest fundraising campaign for 2024, we attracted more than 15,000
+						participants and raised RM2,000,000. This amount of money reflects the love
+						and cohesion of the community and brings tangible help to the people in the
+						affected areas.
+					</p>
+				</div>
+ 
+				<div class="container">
+					<h2 id="donations">Direction of Funds</h2>
+					<p class="mt-3" style="font-weight: bold;">
+						60%: Support post-disaster reconstruction, including housing repair and community infrastructure
+						reconstruction.<br>
+						25%: Distribute emergency supplies such as food, drinking water, medicine, etc.<br>
+						10%: Fund mental health support projects and education recovery programs.<br>
+						5%: Used for flood warning system optimization and disaster prevention publicity.
+					</p>
+				</div>
+ 
+				<div class="container">
+					<h2 id="history">History</h2>
+					<p class="mt-3">
+						Over the past five years, our fundraising activities have raised more than
+						RM8,000,000 and helped more than 50,000 affected residents. These funds have
+						been used to rehabilitate homes, provide emergency supplies, and restore
+						educational and psychological support services. These efforts not only provide
+						immediate assistance to those affected by the disaster, but also lay the
+						foundation for the long-term development of the community. Through your
+						generosity, we hope to continue to bring warmth, support and hope to those
+						affected by the disaster!
+					</p>
+				</div>
+ 
+ 
+ 
+				<div class="container">
+					<h1 id="Events"><br>Our Events</h1>
+					<div class="row g-3 align-items-stretch">
+						<div class="col-12 col-md-6">
+							<div class="d-flex flex-column align-items-center">
+								<img src="img/famine.jpg" alt="Hunger30" class="img-fluid rounded mt-3 w-100 "
+									style="height: 300px; object-fit: cover;">
+								<h1 class="mt-3">🌟 Event: Hunger30 – Fundraising for Flood Victims</h1>
+								<p>
+									<strong>Event Description</strong><br>
+									Hunger30 is a 30-hour fasting event designed to raise funds and awareness for
+									communities impacted by floods. The event features educational talks, team-building
+									activities, and real-life stories to help participants understand the profound
+									impact of disasters.
+									<br><br>
+									<strong>Fundraising Results</strong><br>
+									Latest Event (2024): Raised 1,200,000 MYR<br>
+									Participants: Over 8,000 people<br>
+									Fund Allocation: Used to distribute food packages, medical supplies, and aid
+									reconstruction efforts.
+									<br><br>
+									<strong>Past Records</strong><br>
+									2023: Raised 950,000 MYR for emergency supplies for 20,000 flood victims<br>
+									2022: Collected 850,000 MYR to assist in clearing and repairing five heavily
+									affected communities<br>
+									2021: Raised 1,100,000 MYR to fund psychological support programs for 3,500 victims
+								</p>
+							</div>
+						</div>
+ 
+						<div class="col-12 col-md-6">
+							<div class="d-flex flex-column align-items-center">
+								<img src="img/walk.JPG" alt="Walkathon" class="img-fluid rounded mt-3 w-100 "
+									style="height: 300px; object-fit: cover;">
+								<h1 class="mt-3">🌊 Event: Flood Relief Walkathon</h1>
+								<p>
+									<strong><br><br>Event Description</strong><br>
+									This walkathon raises awareness of climate change and flood issues through a healthy
+									activity.
+									Registration fees and individual fundraising contribute to flood emergency funds.
+									The event route spans
+									Kuala Lumpur’s historic landmarks, symbolizing unity and hope.
+									<br><br>
+									<strong><br>Fundraising Results</strong><br>
+									Latest Event (2024): Raised 750,000 MYR<br>
+									Participants: Over 5,000 walkers<br>
+									Fund Allocation: Expanded shelter facilities and provided water purification
+									equipment.
+									<br><br>
+									<strong>Past Records</strong><br>
+									2023: Raised 600,000 MYR to build three new emergency shelters<br>
+									2022: Collected 520,000 MYR to distribute water purification systems to 12
+									villages<br>
+									2021: Raised 700,000 MYR for post-disaster infrastructure repair
+ 
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+ 
+ 
+ 
+				<div class="container">
+					<div class="row g-3 align-items-stretch">
+						<div class="col-12 col-md-6">
+							<div class="d-flex flex-column align-items-center">
+								<img src="img/draw.jpg" alt="Art" class="img-fluid rounded mt-3 w-100 "
+									style="height: 300px; object-fit: cover;">
+								<h1 class="mt-3">🎨 Event: Kids for Flood Relief Art Exhibition</h1>
+								<p>
+									<strong>Event Description</strong><br>
+									Encouraging children to express their understanding of disasters and hope for the
+									future through art and crafts. Includes a charity sale, with proceeds going toward
+									rebuilding schools in flood-affected areas.
+									<br><br>
+									<strong>Fundraising Results</strong><br>
+									Latest Event (2024): Raised 350,000 MYR<br>
+									Participants: Over 1,500 children<br>
+									Fund Allocation: Repaired five flood-damaged schools.
+									<br><br>
+									<strong>Past Records</strong><br>
+									2023: Raised 320,000 MYR to purchase new desks and supplies for three schools<br>
+									2022: Collected 280,000 MYR for library reconstruction projects in disaster-hit
+									schools<br>
+									2021: Raised 300,000 MYR to provide free educational resources to 1,000 students
+								</p>
+							</div>
+						</div>
+ 
+						<div class="col-12 col-md-6">
+							<div class="d-flex flex-column align-items-center">
+								<img src="img/mental.png" alt="Health" class="img-fluid rounded mt-3 w-100 "
+									style="height: 300px; object-fit: cover;">
+								<h1 class="mt-3">🕊️ Event: Mental Health and Recovery Workshops</h1>
+								<p>
+									<strong>Event Description</strong><br>
+									Floods often have overlooked psychological impacts. This workshop provides
+									counseling,
+									trauma therapy, and resilience training to help affected families regain confidence
+									and
+									rebuild their lives.
+									<br><br>
+									<strong>Fundraising Results</strong><br>
+									Latest Event (2024): Raised 300,000 MYR<br>
+									Participants: Over 1,200 flood victims<br>
+									Fund Allocation: Funded mental health expert teams and free counseling sessions.
+									<br>
+									<strong>Past Records</strong><br>
+									2023: Raised 280,000 MYR to support over 1,000 individuals with psychological
+									assistance<br>
+									2022: Collected 250,000 MYR to fund a mental health hotline<br>
+									2021: Raised 260,000 MYR to establish mental health recovery centers in disaster-hit
+									areas
+ 
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+ 
+				<div class="container">
+					<div class="row g-3 align-items-stretch">
+						<div class="col-12 col-md-6">
+							<div class="d-flex flex-column align-items-center">
+								<img src="img/clean.jpeg" alt="Rebuild" class="img-fluid rounded mt-3 w-100 "
+									style="height: 300px; object-fit: cover;">
+								<h1 class="mt-3">🛠️ Event: Post-Flood Rebuild Volunteers</h1>
+								<p>
+									<strong>Event Description</strong><br>
+									Volunteers are recruited to participate in cleaning and rebuilding flood-affected
+									communities, including repairing homes, clearing roads, and reconstructing bridges.
+									The event provides basic training for volunteers and hope for disaster victims.
+									<br><br>
+									<strong>Fundraising Results</strong><br>
+									Latest Event (2024): Raised 900,000 MYR<br>
+									Participants: Over 4,000 volunteers<br>
+									Fund Allocation: Repaired 150 homes and rebuilt four destroyed bridges.
+									<br><br>
+									<strong>Past Records</strong><br>
+									2023: Raised 850,000 MYR to repair 100 homes<br>
+									2022: Collected 800,000 MYR to provide tools and materials for 15 communities<br>
+									2021: Raised 870,000 MYR to rebuild post-flood infrastructure and restore clean
+									water supplies
+								</p>
+							</div>
+						</div>
+ 
+						<div class="col-12 col-md-6">
+							<div class="d-flex flex-column align-items-center">
+								<img src="img/cycle1.jpg" alt="Flood Relief" class="img-fluid rounded mt-3 w-100 "
+									style="height: 300px; object-fit: cover;">
+								<h1 class="mt-3">🚴 Event: Pedal for Flood Relief</h1>
+								<p>
+									<strong>Event Description</strong><br>
+									A cycling fundraiser that calls attention to climate change and disaster risks.
+									Participants contribute through
+									donations or sponsorships to support flood relief funds. The route passes through
+									Malaysia's scenic landmarks,
+									symbolizing resilience amidst challenges.
+									<br><br>
+									<strong>Fundraising Results</strong><br>
+									Latest Event (2024): Raised 450,000 MYR<br>
+									Participants: Over 2,000 cyclists<br>
+									Fund Allocation: Purchased rescue boats and emergency kits for five rural areas.
+									<br>
+									<strong><br>Past Records</strong><br>
+									2023: Raised 400,000 MYR to donate 30 rescue boats<br>
+									2022: Collected 350,000 MYR for 300 waterproof emergency kits<br>
+									2021: Raised 380,000 MYR to train and equip rescue teams
+ 
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+ 
+ 
+			</div>
+ 
+			<div
+				style="float: right; width: 300px; height: auto; background-color: #f8f9fa; margin: 10px; padding: 10px; border: 1px solid #ddd;">
+				<div class="content-container">
+ 
+					<div class="container text-center py-2">
+						<a href="#donations" class="explore-btn text-decoration-none">
+							<img src="img/pic5.png" alt="Donation" class="img-fluid"
+								style="width: 100%; max-width: 500px;">
+							<h5> 💰 Discover how your donations are being allocated to help flood victims. 🏠</h5>
+						</a>
+					</div>
+ 
+ 
+					<div class="container text-center py-2">
+						<a href="#history" class="explore-btn text-decoration-none">
+							<img src="img/pic6.png" alt="Donation Hist" class="img-fluid"
+								style="width: 100%; max-width: 500px;">
+							<h5> 📊 Check out the history of donations and how they’ve made a difference. 💖!</h5>
+						</a>
+					</div>
+ 
+ 
+					<div class="container text-center py-2">
+						<a href="#Events" class="explore-btn text-decoration-none">
+							<img src="img/pic7.png" alt="Events" class="img-fluid"
+								style="width: 100%; max-width: 500px;">
+							<h5>🎉 Learn about the events and initiatives we’re hosting to support flood recovery. 🛠️
+							</h5>
+						</a>
+					</div>
+ 
+ 
+				</div>
+			</div>
+		</div>
+ 
+	</div>
+	<div th:insert="~{fragments/footer}"></div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+ 
+</html>
+ 

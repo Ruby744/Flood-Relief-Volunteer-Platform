@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Create Donation</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+		<link rel="stylesheet" th:href="@{/css/admin.css}">
+	</head>
+	
+	<body>
+		<div th:insert="~{fragments/header}"></div>
+		<div class="container form-container">
+			<div class="row">
+			    <form th:action="@{/admin-donation}">
+					<button class="btn btn-light" type="submit">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16" transform="translate(0, -1)">
+						  <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+						</svg>
+						Back
+					</button>
+			    </form>	
+			</div>
+			<div class="row">
+				<h2>New Donation</h2>
+				<h4>User Details</h4>
+				<div class="card-body">
+					<form th:action="@{/admin-donation}" th:object="${donation}" method="POST">
+						<div class="form-group">
+						    <label for="title">Title</label>
+							<select id="title" class="form-select" name="title" required>
+							    <option value="" disabled selected>Select a Title</option>
+							    <option value="Mr" th:selected="${title == 'Mr'}">Mr</option>
+							    <option value="Ms" th:selected="${title == 'Ms'}">Ms</option>
+							    <option value="Mrs" th:selected="${title == 'Mrs'}">Mrs</option>
+							    <option value="Dr" th:selected="${title == 'Dr'}">Dr</option>
+							    <option value="Prof." th:selected="${title == 'Prof'}">Prof</option>
+							</select>
+						</div>
+
+						<div class="form-group">
+							<label>First Name</label>
+					                <input type="text" class="form-control" id="firstName" name="firstName" th:value="${firstName}"required />
+						</div>
+					
+						<div class="form-group">
+							<label>Last Name</label>
+							<input type="text" class="form-control" id="lastName" name="lastName" th:value="${lastName}"/>
+						</div>
+						
+						<div class="form-group">
+							<label>Email</label>
+							<input type="email" class="form-control" id="email" name="email" th:value="${email}" aria-describedby="emailHelp" required>
+						</div>
+			
+						<div class="form-group">
+							<label for="confirmEmail">Confirm Email:</label>
+							<input type="email" id="confirmEmail" class="form-control" placeholder="Confirm your email" required>
+							<div id="emailError" class="text-danger mt-2" style="display: none;">Emails do not match!</div>
+
+						</div>
+						
+						<div class="form-group">
+							<label>Phone</label>
+							<input type="tel" class="form-control" 
+	                           id="phone" 
+							   name="phone"
+	                           pattern="[0-9]+"
+	                           th:value="${phone}"
+	                           aria-describedby="telHelp" required>
+						</div>
+
+						<div class="form-group">
+							<label>Country</label>
+							<select id="country" class="form-select" name="country" required>		        
+							    <option value="" disabled selected>-- Select --</option>
+								<option value="Malaysia" th:selected="${country == 'Malaysia'}">Malaysia</option>
+							    <option value="Indonesia" th:selected="${country == 'Indonesia'}">Indonesia</option>
+							    <option value="Singapore" th:selected="${country == 'Singapore'}">Singapore</option>
+							</select>
+						</div>
+
+						<div class="form-group">
+							<label>City</label>
+							 <input type="text" class="form-control" id="city" name ="city" th:value="${city}" required>
+						</div>
+
+						<div class="form-group">
+							<label>Building</label>
+							<input type="text" class="form-control" id="building" name="building" th:value="${building}" required>
+						</div>
+
+						<div class="form-group">
+							<label>Street</label>
+							<input type="text" class="form-control" id="street" name="street" th:value="${street}" required>
+						</div>
+
+						<div class="form-group">
+							<label>Postal</label>
+							<input type="text" class="form-control" id="postal" name="postal" th:value="${postal}" required>
+						</div>
+
+						<hr/>
+						
+						<h4>Project Details</h4>
+						<div class="form-froup">
+							<label>Project</label>
+							<select id="placeSelector" class="form-select" name="placeId" required>
+							    <option value="" disabled selected>-- Select a Place --</option>
+							    <option th:value="${1}" th:text="'Pahang'"></option>
+							    <option th:value="${2}" th:text="'Kelantan'"></option>
+							    <option th:value="${3}" th:text="'Selangor'"></option>
+								<option th:value="${4}" th:text="'Perak'"></option>
+								<option th:value="${5}" th:text="'Negeri Sembilan'"></option>
+								<option th:value="${6}" th:text="'Melaka'"></option>
+							</select>
+						</div>
+						
+						<hr/>
+						
+						<div class="form-group">
+							<h4>Donation Details</h4>
+						    <label for="type" class="form-label">Choose what to donate:</label>
+						    <select id="type" name="type" class="form-select">
+						        <option value="" selected disabled>-- Select --</option>
+								<option value="MONEY" th:selected="${type == 'MONEY'}">Money</option>
+								<option value="ITEMS" th:selected="${type == 'CLOTHES'}">Items</option>
+						    </select>
+						</div>
+							
+					    <div id="moneySection" class="form-group donation-section" >
+					        <h5>Donate Money</h5>
+					        <label for="amount">Donation Amount:</label>
+					        <input type="number" id="amount" class="form-control" name="amount" th:value="${donation?.amount}" placeholder="Enter amount">
+					    </div>
+
+							
+					    <div id="itemsSection" class="form-group donation-section">
+					        <h5>Donate Items</h5>
+					        <label for="quantity">Quantity:</label>
+					        <input type="number" id="quantity" class="form-control" name="quantity" th:value="${donation?.quantity}" placeholder="Enter quantity">
+							<br><label for="desciption">Description:</label>
+							<textarea class="form-control" id="description" name="description" th:value="${donation?.description}" rows="3"></textarea>
+					    </div>
+							 
+						<div class="form-group">
+						<input type="hidden" name="receiveUpdate" id="receiveUpdate" th:value="${donation?.receiveUpdate}" />
+						    <div class="form-check form-switch">
+						        <input
+						            class="form-check-input"
+						            type="checkbox"
+						            id="emailUpdateToggle"
+						            onchange="updateEmailPreference()"
+						        />
+						        <label class="form-check-label" for="emailUpdateToggle">
+						            <p id="emailPreferenceMessage" class="text-muted">
+						                I would not like to get email updates.
+						            </p>
+						        </label>
+						    </div>
+						</div>
+
+
+						
+						<button type="submit" class="btn btn-primary submit">Submit</button>
+						<p class="mb-5" th:if="${error}" th:text="${error}" style="color:red;"></p>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div th:insert="~{fragments/footer}"></div>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+		    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+		    crossorigin="anonymous"></script>
+			<script th:src="@{/js/admin.js}" defer></script>
+	</body>
+</html>

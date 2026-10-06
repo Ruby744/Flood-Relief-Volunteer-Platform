@@ -1,0 +1,59 @@
+@charset "UTF-8";
+ 
+ 
+ 
+ 
+/* Title */
+.custom-title {
+	font-size: 2rem;
+	font-weight: bold;
+}
+ 
+ 
+ 
+html {
+	scroll-behavior: smooth;
+	/* Smooth scrolling effect */
+}
+ 
+ 
+ 
+ 
+.explore-btn {
+	display: inline-block;
+	text-align: center;
+	border-radius: 15px;
+	overflow: hidden;
+	transition: transform 0.3s, box-shadow 0.3s;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+	margin-bottom: 20px;
+	/* Space to avoid overlapping */
+}
+ 
+.explore-btn img {
+	border-radius: 15px;
+	border: 15px solid #ffffff;
+	/* Thicker white border */
+	transition: transform 0.3s, border-color 0.3s;
+}
+ 
+.explore-btn:hover {
+	transform: scale(1.05);
+	box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+}
+ 
+.explore-btn:hover img {
+	transform: scale(1.05);
+	/* Enlarge image slightly on hover */
+	border-color: #ffffff;
+	/* Change border color on hover */
+}
+ 
+.explore-btn h5 {
+	margin-top: 10px;
+	/* Adjust spacing below the image */
+	font-size: 1rem;
+	font-family: "Courier New", Courier, monospace;
+	/* Font styling */
+	color: #333;
+}

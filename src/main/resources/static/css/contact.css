@@ -1,0 +1,157 @@
+.container-contact {
+	font-family: 'Arial', sans-serif;
+    justify-content: center;/* Horizontally centers the content within the body. */
+    align-items: center;/* Vertically centers the content within the body */
+	text-align: center;
+    padding: 40px;
+    margin-top: 40px;
+    margin-bottom:40px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;/*  Rounds the corners of the container by 10 pixels. */    
+}
+
+h1 {    
+    margin-bottom: 20px;
+    font-size: 36px;
+    letter-spacing: 2px;/* Increases the space between characters by 2 pixels. */
+    font-weight: bold;
+}
+
+h2 {
+
+    margin-bottom: 20px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    text-align: left;
+    font-size: 16px;
+}
+
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;/* Makes the input fields and textarea span the full width of their container. */
+    padding: 12px;
+    margin-bottom: 20px;
+    background-color: #F2F2F2; 
+    border: 1px solid #555; 
+    border-radius: 5px;
+}
+
+form textarea {
+    height: 120px;
+    resize: none;
+}
+
+form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;/* Adds 10 pixels of padding vertically and 20 pixels horizontally. */
+    border: none;
+    border-radius: 5pxrgb(192, 192, 192)    cursor: pointer;
+    font-size: 16px;
+    border-radius:10px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049; 
+}
+
+
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+	gap: 15px;/* Adds a 15-pixel gap between each icon. */
+}
+
+.social-icons a {
+    display: inline-block;
+    color: #ccc;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #4CAF50; 
+}
+
+.button-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px; 
+    margin-top: 20px;
+}
+
+/* Button with an Icon */
+.circular-btn {
+    background-color: #F5F5DC;
+    color: #333;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;/* Centers the content inside the button. */
+    transition: background-color 0.3s;
+}
+
+.instagram-btn {
+    background-color: #FFB6C1; 
+    margin-top: 24px;
+}
+
+.instagram-btn:hover {
+    background-color: #FF69B4;
+    
+}
+
+
+.facebook-btn {
+    background-color: #4267B2; 
+}
+
+.facebook-btn:hover {
+    background-color: #365899;
+}
+
+
+.twitter-btn {
+    background-color: #D3D3D3; 
+}
+
+.twitter-btn:hover {
+    background-color:#A9A9A9;
+}
+
+
+.discord-btn {
+    background-color: #7289DA; 
+}
+
+.discord-btn:hover {
+    background-color: #5865F2;
+}
+
+
+.youtube-btn {
+    background-color: #FF0000; 
+}
+
+.youtube-btn:hover {
+    background-color: #CC0000;
+}

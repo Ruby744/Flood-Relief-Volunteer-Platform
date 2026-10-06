@@ -1,0 +1,23 @@
+<div th:fragment="historyTable">
+    <div th:if="${donations.size() > 0}" class="table-responsive">
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">Donation Type</th>
+                    <th scope="col">Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="donation : ${donations}">
+                    <td th:text="${donation.type}">Type</td>
+                    <td th:text="${donation.type == 'MONEY' ? 'Amount: ' + donation.amount : 'Quantity: ' + donation.quantity + ', Description: ' + donation.description}">
+                        Details
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div th:if="${donations.size() == 0}" class="text-muted">
+        No donation history available for this place.
+    </div>
+</div>
